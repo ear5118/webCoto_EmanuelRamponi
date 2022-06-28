@@ -1,0 +1,691 @@
+*{
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+
+
+        html, body{
+            width: 100%;  
+        }
+
+        body{
+          font-family: sans-serif;
+        }
+        
+        #wrapper{
+          display: grid;
+          grid-template-areas: 
+          "header"
+          "banner"
+          "submenu"
+          "promosDestacadas"
+          "bannerElectro"
+          "promosElectro"
+          "serviciosCoto"
+          "redes"
+          "infoAdicional"
+          "footer"
+          ;
+          grid-template-rows: 190px 400px 40px .2fr 300px 0.5fr 200px 75px auto auto;
+          width: 100%;
+        }
+
+        #wrapper_infoAdicional{
+          grid-area: infoAdicional;
+        }
+
+        #bannerPromosDestacadas{
+          grid-area: banner;
+        }
+
+        #wrapper_promocionesDestacadas{
+          grid-area: promosDestacadas;
+        }
+
+        #wrapper_bannerElectro{
+          grid-area: bannerElectro;
+        }
+
+        #wrapper_promosElectro{
+          grid-area: promosElectro;
+        }
+
+        #wrapper_redes{
+          grid-area: redes;
+        }
+
+        footer{
+          grid-area: footer;
+        }
+
+      /* MENU*/
+  .header {
+  width: 100%;
+  list-style: none;
+  background-color: #222729;
+  }
+  
+  
+  header li a:hover{ /* cada vez que el mouse pasa por ahi cambie el color de fondo*/
+   background: #767879;
+  }
+  
+  .navigation ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  
+  .logo{
+    text-align: center;
+  }
+  .navigation ul li {
+      display: inline-block; 
+      font-size: 20px;
+      list-style-type: none;
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 16px;
+    } 
+  
+  .navigation ul li a{
+      text-decoration: none; /* Es para sacarle el texto enlace a las listas*/
+      color: white;
+      padding: 0.5rem 1rem;
+
+      transition: all 0.4s linear; /*TRANSICION DE ANIMACION AL PONER EL MOUSE ARRIBA*/
+  }
+
+  .navigation li p{
+    font-size: 23px;
+  }
+
+
+  /* BANNER PROMO DESTACADA */
+ #bannerPromosDestacadas{
+  background-color: #c5c5c5;
+ }
+  /*----------------------------------------------------------------------------------------------------*/ 
+      
+
+      /* SUBMENU */
+
+        #submenu{
+          padding:6px ;
+          background-color: #c5c5c5;
+          border: 1px solid rgba(0, 0, 0, 0.226);
+        }
+      
+        #submenu ul{
+          display:flex;
+          justify-content: space-evenly;
+          flex-direction: row;
+          
+        }
+
+        
+        #submenu ul li{
+          padding-right: 1rem;
+          padding-left: 1rem;
+          text-transform: uppercase;
+          border-radius: 10px;
+          border: 2px solid black;
+        }
+
+        #submenu ul li p{
+          margin-top: 4px;
+        }
+
+
+        section#submenu{
+          border: 1px 0 solid black;
+        }
+      
+
+        /*PROMOS DESTACADAS*/
+        h1{
+            visibility: hidden;
+        }
+      
+
+        .imagenes_productos{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .descripcion_producto{
+          margin-bottom: 30px;
+        }
+
+
+        .div_flex--1eraParte{
+          display: flex;
+          justify-content: space-between;
+          padding: 0.5rem;
+          margin-bottom: 30px;
+        }
+        
+        .div_flex--2daParte{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 30px;
+          
+        }
+
+        .div_flex--2daParte-A{
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 10px;
+          font-size: 15px;
+          text-decoration: line-through
+        }
+
+        .div_flex--2daParte-B{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        
+        .botonComprar{
+          margin-bottom: 20px;
+          background: #f3f3f3;
+          padding: 20px;
+          border-radius: 14px;
+          margin-top: 30px;
+          border: none;
+          font-size: 27px;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+
+        .numeros{
+          font-size: 20px;
+          margin-left: 15px;
+        }
+
+        .botonCantidad{
+          font-size: 20px;
+        }
+        
+        .precioAnterior p{
+          text-decoration: line-through;
+        }
+
+
+       .container-elements-img{
+        display: flex;
+        justify-content: center;
+        inline-size: 100%;
+        object-fit: cover;
+       } 
+
+  
+
+        li{
+           list-style: none;
+        }
+
+
+
+        .container-elements{
+          
+          display: flex;
+          flex-direction: column;
+          border-radius: 16px;
+          box-shadow: 2px 5px 15px 5px #e5e5e5;
+          margin: 1rem;
+          padding: 55px;
+          text-align: center;
+          font-size: 27px;
+          align-content: center;
+        }
+
+    
+
+        .promosDestacadas_titulos{
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          margin: 2rem;
+          border-radius: 50px;
+          border: 3px ridge red;
+          padding: 3rem;
+          background-color: #d8d8d85b;
+          height: 50px;
+
+        }
+        
+        .promosDestacadas_titulos p{
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .promos_posts{
+          display: flex;
+          flex-direction: column;
+        }
+
+        .div_flex--1eraParte_oferta{
+          background-color: #e50000b5;
+          border-radius: 11px;
+          width: 120px;
+          color: white;
+        }
+
+        .div_flex--1eraParte_oferta p{
+          margin-top: 14px;
+        }
+
+
+        .div_flex--1eraParte-cartel{
+          background-color: #ddddddb3;
+          border-radius: 11px;
+        }
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+/*BANNER ELECTRO*/
+#wrapper_bannerElectro{
+  background-color: #c5c5c5;
+}
+
+/*SERVICIOS COTO*/
+#wrapper_serviciosCoto{
+  background-color: #c5c5c5;
+}
+ 
+
+  /* INFOADICIONAL*/
+
+  .infoAdicional{
+    margin: 0;
+    padding: 0;
+  }
+
+  .infoAdicional div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    
+  }
+
+  .infoAdicional ul{
+    margin-right: 4rem;
+  }
+
+  .infoAdicional p{
+    color: #ffffff;
+  }
+
+.infoAdicional_opciones{
+  opacity: 80%;
+  font-size: 18px;
+}
+
+.infoAdicional_titulo{
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+
+
+  /* REDES*/
+.redes{
+  background-color: rgb(0, 132, 255);
+}
+
+.infoAdicional{
+  background: #222729; 
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* FOOTER*/
+footer article {
+  background: #222729;
+  color: rgb(250, 250, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  border-top: 1px  solid grey;;
+}
+
+footer article div span a{
+text-decoration: none;
+color: white;
+}
+
+footer div{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+.footer_dir p{
+  text-align: center;
+}
+footer article div{
+padding: 0.2rem;
+}
+
+
+/*SECCION CONTACTOS*/
+#contacto{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "formulario"
+    "redes"
+    "infoAdicional"
+    "footer"
+    ;
+    grid-template-rows: 190px 120px 1200px 75px auto auto;
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
+#titulo{
+  grid-area: titulo;
+}
+
+
+#formulario{
+  grid-area: formulario;
+  background: #b1c5df8c;
+}
+
+#redes{
+  grid-area: redes_contacto;
+}
+
+#infoAdicional{
+  grid-area: infoAdicional_contacto;
+}
+
+footer{
+  grid-area: footer;
+}
+
+textarea{
+  width: 90%;
+  height: 190px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/*TITULO CONTACTO*/
+#titulo{
+  background: #c5c5c5;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #00000040;
+}
+.bordeRojo{
+  border: 3px ridge #e60000;
+}
+.titulo_div{
+  text-align: center;
+  margin-top: 35px;
+}
+
+/*FORMULARIO CONTACTO*/
+.contacto_textoIntro{
+  background: #ffffffb0;
+  margin: 30px;
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 1px 11px 17px 2px rgba(0,0,0,0.46);
+}
+
+.contacto_formulario{
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.formulario_palabra{
+  border: 1px hidden #1C6EA4;
+  border-radius: 12px 12px 0px 0px;
+  background: #d30000d6;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.contacto_textoIntro p {
+  margin-top: 10px;
+}
+
+
+.formulario_palabra p{
+  font-size: 20px;
+  padding: 10px;
+}
+
+form{
+  text-align: center;
+}
+
+fieldset{
+  border: 0;
+}
+
+.contacto_formulario-caja{
+display: flex;
+flex-direction: column;
+border-top: 2px inset rgba(7,13,26,0.54);
+border-radius: 0px 0px 40px 40px;
+background: #95bff3b3;
+padding: 22px 0;
+}
+
+.contacto_formulario-caja--1{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contacto_formulario-label div{
+  border: 1px solid #ffff;
+  margin: 20px;
+  width: 144px;
+  font-size: 22PX;
+  color: #ffff;
+  BACKGROUND: #d32020c7;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.contacto_formulario-input div{
+  margin: 24.8px;
+  font-size: 22PX;
+}
+
+.contacto_formulario-input div input{
+  font-size: 22px;
+  width: 254px;
+}
+
+
+.contacto_formulario-caja--2 div{
+  margin-bottom: 30px;
+}
+
+.contacto_motivo div{
+  margin-bottom: 8px;
+}
+
+.contacto_motivo p{
+  font-size: 22px;
+}
+
+.contacto_motivo select{
+  width: 370px;
+  height: 30PX;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.678);
+}
+
+
+.contacto__botonesFormulario input{
+  margin: 16px;
+  width: 260px;
+  height: 40PX;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 4px 7px 19px 4px rgb(0 0 0 / 16%);
+  background: #dfdfdff0;
+}
+
+
+@media screen and (min-width: 501px){
+  .div_flex--1eraParte_oferta p{
+    margin-top: 0;
+  }
+} 
+
+@media screen and (min-width: 992px){
+  .promos_posts{
+    flex-direction: row;
+  }
+
+  .separacion {
+    border:1PX solid rgba(0, 0, 0, 0.363) ;
+    margin-bottom: 1rem;
+  }
+
+  .nav_container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row ;
+    align-items: center; /*los dos elementos se equilibran*/
+    }
+
+    .container{
+      display: block;
+  }
+
+  .promosDestacadas_titulos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    border-radius: 50px;
+    border: 3px ridge red;
+    padding: 3rem;
+    background-color: #d8d8d85b;
+
+  }
+  
+  .promosDestacadas_titulos p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .promos_posts{
+    justify-content: space-evenly;
+  }
+
+  h3{
+  font-size: 24px;  
+  }
+
+  .div_flex--1eraParte{
+    font-size: 14px;
+  }
+  .div_flex--1eraParte_oferta p{
+    margin-top: 7px;
+  }
+  
+  .nav_container{
+    margin-top: 30px;
+  }
+
+  .imagenes_productos{
+    width: 90%;  
+  }
+
+  .infoAdicional_opciones{
+    font-size: 16px;
+  }
+  
+  .infoAdicional_titulo{
+    font-size: 20px;
+  }
+
+  .infoAdicional div{
+    justify-content: flex-start;
+    margin-right: 50px;
+  }
+
+  footer div{
+    font-size: 16px;
+  }
+
+  .contacto_formulario-caja {
+    flex-direction: row;
+
+}
+
+.contacto_formulario-input div input {
+  width: 300px;
+  font-size: 16px;
+}
+
+.contacto_formulario-label div {
+  width: 220px;
+  font-size: 18px;
+  margin: 24px 21px;
+}
+
+textarea{
+  height: 230px;
+}
+
+.contacto_motivo select {
+  width: 241px;
+  font-size: 12px;
+}
+
+.contacto_textoIntro {
+  font-size: 16px;
+}
+
+
+
+#contacto{
+  grid-template-rows: 190px 120px 900px 75px auto auto;
+}
+
+.contacto_formulario-caja--2{
+margin-top: 24px;
+}
+
+.contacto_formulario-input div {
+  margin: 32px 0px;
+  font-size: 16PX;
+}
+
+.contacto_motivo p {
+  font-size: 20px;
+}
+}
+
+
