@@ -10,6 +10,7 @@ html,
 body {
   width: 100%;
   height: 100vh;
+  background: #5faad530;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   "infoAdicional"
   "footer"
   ;
-  grid-template-rows: 0.75fr 2fr 1fr .2fr 300px 0.5fr 200px 75px auto auto;
+  grid-template-rows: 0.3fr 0.5fr 0.1fr .2fr 300px 0.5fr 200px 75px auto auto;
   width: 100%;
 }
 
@@ -41,10 +42,12 @@ body {
 
 #bannerPromosDestacadas{
   grid-area: banner;
+  background: #181818e0;
 }
 
 #wrapper_promocionesDestacadas{
   grid-area: promosDestacadas;
+
 }
 
 #wrapper_bannerElectro{
@@ -67,7 +70,7 @@ header {
 }
 
 .image-fluid {
-
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -82,7 +85,7 @@ header {
 .navbar-brand {
   width: 60%;
   padding: 0;
-  margin-bottom: 16px;
+
 }
 
 
@@ -97,33 +100,90 @@ header {
 /*BANNER*/
 
 .carousel-item{
-  width: 90%;
+  border-radius: 10px;
+  width: 100%;
+}
+.carousel-images{
+  width: 100%;
+    height: 20vh;
+  padding-bottom: 26px;
+}
+
+.carousel{
+  height: 100%;
 }
 
 .carousel-inner{
-  border-radius: 10px;
- 
-  width: 90%;
-  height: 180px;
+  width: 100%;
 }
 
-.carousel-item{
-  border-radius: 10px;
+.carousel-indicators dl, ol, ul {
+
+  margin-bottom: 0;
 }
-.carousel-images{
-  border-radius: 10px;
-  height: 100px;
+.carousel-indicators{
+  margin: 0;
+  margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+
 }
 
-#bannerPromosDestacadas{
-  background: #c5c5c5;
+.carousel-indicators li{
+width: 10px;
+height: 10px;
+margin-left: 5px;
+margin-right: 0;
+background-color: #ffffff;
 }
 
-.container-fluid div {
-  width: 96%;
-  padding: 0px;
-  
+
+.carousel__botones {
+    background: black;
+    height: 20%;
+    width: 8%;
+    margin: 60px 5px;
+    padding: 7px;
 }
+
+/*SUBMENU*/
+#submenu{
+  background: #ffffff78;
+}
+
+.submenu__ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 5px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.submenu_ul-li{
+  width: 50%;
+    text-align: center;
+}
+
+.submenu_ul-li div{
+  border-radius: 10px;
+border: 1px ridge #ffffff;
+margin: 4px;
+padding: 10px;
+background: #d63232;
+color: #ffff;
+font-weight: bold;
+width: 70%;
+display: inline-flex;
+justify-content: space-around;
+}
+
+.submenu_ul-li div p{
+margin-bottom: 0;
+}
+
+
 
 @media screen and (max-width: 220px) {
  
@@ -154,44 +214,69 @@ header {
 @media screen and (max-width: 320px) {
   
     /*BANNER*/
-    .carousel-indicators {
-      margin: 0px 40PX 6PX;
-  }
   }
 
-  @media screen and (m-width: 370px) {
+  @media screen and (max-width: 370px) {
   
     /*BANNER*/
-    .carousel-indicators {
-      margin: 0px 27px 14PX;
-  }
+    .carousel__botones {
+      width: 10%;
+    }
+    
 
   .carousel-images {
-    height: 140px;
+    height: 20vh;
 }
   }
 
 @media screen and (min-width: 480px) {
 /*HEADER*/
   .navbar-brand {
-    width: 30%;
-    margin: 20px 0;
-    padding: 0 17px 8px 0;
+    width: 45%;
   }
 
   /*BANNER*/
-  
+  .carousel-images{
+    height: 25vh;
+  }
+
+  .carousel__botones{
+    margin: 90px 0px;
+    height: 15%;
+    width: 5%;
+  }
+
+  /*SUBMENU*/
+
+  .submenu_ul-li div{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) {
 /*HEADER*/
   .navbar-brand {
-    width: 20%;
+    width: 25%;
     margin: 20px 0;
   }
 
   /*BANNER*/
+  .carousel-images{
+    height: 30vh;
+  }
 
+  .carousel__botones {
+    margin: 110px 0px;
+    height: 12%;
+    width: 4%;
+    padding: 10px;
+}
+
+  /*SUBMENU*/
+
+  .submenu_ul-li div{
+    width: 40%;
+  }
 }
 
 
@@ -210,5 +295,43 @@ header {
   }
 
   /*BANNER*/
-  
+  .carousel-images{
+    height: auto;
+    width: 70%;
+    margin-left: 190px;
+    padding: 16px ;
+    border-radius: 30px;
+    margin-bottom: 8px;
+
+  }
+
+  .carousel__botones {
+    margin: 120px 0px;
+    height: 10%;
+    width: 2%;
+    padding: 8px;
+}
+
+  /*SUBMENU*/
+
+  .submenu_ul-li div{
+    padding: 5px;
+  }
+
+  .submenu__ul{
+    margin: 7px 50px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .carousel__botones {
+    margin: 180px 0px;
+}
+
+.carousel-images{
+
+  margin-left: 250px;
+
+
+}
 }
