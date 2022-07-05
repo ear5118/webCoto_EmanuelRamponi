@@ -390,6 +390,90 @@ footer{
   opacity:0.8;
 }
 
+
+/*CONTACTO*/
+#contacto{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "titulo"
+  "formulario"
+  "redes"
+  "infoAdicional"
+  "footer"
+  ;
+  grid-template-rows: 0fr 1fr 3fr 75px auto auto;
+  width: 100%;
+
+}
+
+#titulo{
+grid-area: titulo;
+}
+
+
+#formulario{
+grid-area: formulario;
+background: #b1c5df8c;
+}
+
+#redes{
+grid-area: redes_contacto;
+}
+
+#infoAdicional{
+grid-area: infoAdicional_contacto;
+}
+
+footer{
+grid-area: footer;
+}
+
+/*NOSOTROS*/
+#nosotros{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "coto"
+  "footer"
+  ;
+  grid-template-rows: 0fr 3fr auto;
+  width: 100%;
+
+}
+
+
+/*DESCUENTOS*/
+#descuentos{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "descuentosBancarios"
+  "footer"
+  ;
+  grid-template-rows: 0fr 3fr auto;
+  width: 100%;
+
+}
+
+/*OFERTAS*/
+#ofertas{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "ofertas_semanales"
+  "footer"
+  ;
+  grid-template-rows: 0fr 3fr auto;
+  width: 100%;
+
+}
+
+
+
+
+
+
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {
     text-align:center;
