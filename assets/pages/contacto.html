@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script src="../../bootstrap/js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <div id="contacto">
         <header class="container-fluid">
@@ -23,7 +25,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <a class="navbar-brand text-white" href="../../index.html">
-                            <img class="logo gitimage-fluid" src="../images/logocoto-big2.png"
+                            <img class="logo image-fluid" src="../images/logocoto-big2.png"
                                 alt="Logotipo de la empresa COTO">
                         </a>
                         <div class="collapse navbar-collapse" id="menu">
@@ -47,103 +49,166 @@
             </div>
             <div class="separacion"></div>
         </header>
-<!--
-
 
         <section id="titulo">
             <div class="bordeRojo"></div>
-            <div class="titulo_div">
-                <p> CONTACTO</p>
-            </div>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="titulo_div">
+                                <p> CONTACTO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section id="formulario">
             <article>
-                <div class="contacto_textoIntro">
-                    <div>
-                     <p>
-                    En COTO estamos dedicados a la atención de nuestros clientes y consideramos
-                    sus opiniones como un elemento fundamental para mejorar nuestro servicio.   
-                    </p>
-                    <p>
-                        Por favor, envianos tus comentarios.
-                    </p>      
-                    </div>
-                    
-                </div>
-                <div class="contacto_formulario">
-
-                <div class="formulario_palabra"><P>Escribinos</P></div>
-                <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="get" >
-                    <fieldset>
-                    
-                    
-                    
-                    <div class="contacto_formulario-caja" >
-
-                            <div class="contacto_formulario-caja--1">
-                                <div class="contacto_formulario-label">
-                                    <div><p><label for="nombre">Nombre</label> </p></div>
-                                    <div><p><label for="apellido">Apellido</label></p></div>
-                                    <div> <p><label for="DNI">DNI</label></p> </div>
-                                    <div><p><label for="Telefono">Telefono</label></p></div>
-                                    <div><p><label for="Correo electronico">eMail </label></p></div>
-                                    <div><p><label for="Localidad">Localidad</label></p></div>
-                                </div>
-                                <div class="contacto_formulario-input">
-                                    <div><input type="text" name="nombre"  id="Nombre" placeholder="Ingresa tu nombre"></div>
-                                    <div><input type="text" name="apellido" id="Apellido" placeholder="Ingresa tu apellido"></div>
-                                    <div><input type="text" name="dni" id="DNI" placeholder="DNI"></div>
-                                    <div><input type="text" name="telefono" id="celular" placeholder="Telefono"></div>
-                                    <div><input type="text" name="mail" id="email" placeholder="Ingrese su mail"></div>
-                                    <div><input type="text" name="localidad" id="Localidad" placeholder="Ingrese su localidad"></div>
-                                </div>  
+                <div class="container-fluid">
+                    <div class="row w-100 m-0" >
+                        <div class="col-12 w-100 p-3 d-flex flex-column">
+                            <div class="contacto_textoIntro container flex-column align-items-center b" >
+                                    <p class="text-center mt-1">
+                                        En COTO estamos dedicados a la atención de nuestros clientes y consideramos
+                                        sus opiniones como un elemento fundamental para mejorar nuestro servicio.
+                                    </p>
+                                    <p class="text-center mt-1">
+                                        Por favor, envianos tus comentarios.
+                                    </p>
                             </div>
-             
-                            <div class="contacto_formulario-caja--2">
-                                <div class="contacto_motivo">
-                                    <div>
-                                     <P>Motivo de Contacto</P>    
-                                    </div>
-                                    <div>
-                                      <select name="Motivo">
-                                        <option value="Reclamo en mi compra">Reclamo en mi compra</option>
-                                        <option value="No me llego mi tarjeta Comunidad">No me llego mi tarjeta Comunidad</option>
-                                        <option value="Producto en mal estado">Producto en mal estado</option>
-                                        <option value="No me llego el resumen de mi tarjeta">No me llego el resumen de mi tarjeta</option>
-                                        <option value="Consulta">Consulta</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>  
-                                    </div>
-                                </div>
-                                <div> 
-                                    <textarea name="mensaje" id="message" cols="100" rows="10" placeholder="Deje su reclamo/mensaje aqui con informacion adicional acerca de su situacion"></textarea> 
-                                </div>
-                
-
+                            <div class="contacto_formulario col-12 ">
             
-                            </div> 
+                                <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="get">
+                                    <fieldset>
+            
+            
+            
+                                        <div class="contacto_formulario-caja d-flex flex-column flex-md-row">
+            
+                                            <div class="contacto_formulario-caja--1 col-md-4">
+                                                <div class="contacto_formulario-label col-12 col-md-12 d-flex flex-column align-items-center">
+                                                    <div class="d-flex ">
+                                                    <div class="col-4">
+                                                        <p><label for="nombre">Nombre</label> </p>
+                                                    </div>
+                                                    <div><input type="text" name="nombre" id="Nombre"
+                                                        placeholder="Ingresa tu nombre">
+                                                    </div> 
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4">
+                                                            <p><label for="apellido">Apellido</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="apellido" id="Apellido"
+                                                            placeholder="Ingresa tu apellido">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1"> 
+                                                            <p><label for="DNI">DNI</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="dni" id="DNI" placeholder="DNI">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1">
+                                                            <p><label for="Telefono">Telefono</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="telefono" id="celular" placeholder="Telefono">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1">
+                                                            <p><label for="Correo electronico">eMail </label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="mail" id="email" placeholder="Ingrese su mail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4">
+                                                            <p><label for="Localidad">Localidad</label></p>
+                                                        </div>
+                                                        <div class="col-8"> 
+                                                            <input type="text" name="localidad" id="Localidad"
+                                                            placeholder="Ingrese su localidad">
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+    
+                                            </div>
+
+
+                                                </div>
+
+                                            <div class="contacto_formulario-caja--2 d-flex flex-column align-items-center">
+                                                <div class="contacto_motivo d-flex flex-column align-items-center">
+                                                    <div>
+                                                        <P>Motivo de Contacto</P>
+                                                    </div>
+                                                    <div>
+                                                        <select name="Motivo">
+                                                            <option value="Reclamo en mi compra">Reclamo en mi compra</option>
+                                                            <option value="No me llego mi tarjeta Comunidad">No me llego mi tarjeta
+                                                                Comunidad</option>
+                                                            <option value="Producto en mal estado">Producto en mal estado</option>
+                                                            <option value="No me llego el resumen de mi tarjeta">No me llego el
+                                                                resumen de mi tarjeta</option>
+                                                            <option value="Consulta">Consulta</option>
+                                                            <option value="Otro">Otro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <textarea class="w-75" name="mensaje" id="message" cols="100" rows="10"
+                                                        placeholder="Deje su reclamo/mensaje aqui con informacion adicional acerca de su situacion"></textarea>
+                                                </div>
+            
+                                                <div class="contacto__botonesFormulario">
+                                                    <input class="boton-form" type="submit" value="Enviar la informacion">
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="contacto__botonesFormulario">
-                        <input class="boton-form" type="submit" value="Enviar la informacion">
-                    </div>
-                    </fieldset>
-                </form>
                 </div>
+               
 
             </article>
-        </section>  
+        </section>
 
 
         <section id="redes_contacto" class="redes">
             <div class="bordeRojo"></div>
         </section>
-        
-        <section id="infoAdicional_contacto" class="infoAdicional">
 
-        </section>   
--->
+
         <footer>
             <div class="footer-dark">
                 <div class="container">
@@ -183,6 +248,7 @@
 
                 </div>
         </footer>
-    </div>  
+    </div>
 </body>
+
 </html>
