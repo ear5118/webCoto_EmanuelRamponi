@@ -1,158 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - COTO</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="../../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"> </script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <div id="contacto">
-        <header class="header">
-            <h1>COTO</h1>
-            <div class="nav_container">
-                <div class="logo">
-                    <a href="../../index.html">
-                    <img class="logo" src="../images/logocoto-big2.png" style="height: 75px;" alt="Logotipo de la empresa COTO">
-                    </a>
+        <header class="container-fluid">
+            <div class="row w-100">
+                <div class="col-12 col-lg-12 m-2 pl-2 ml-2">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand text-white" href="../../index.html">
+                            <img class="logo image-fluid" src="../images/logocoto-big2.png"
+                                alt="Logotipo de la empresa COTO">
+                        </a>
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active"> <a href="ofertas.html" class="nav-link">
+                                        <p>Ofertas</p>
+                                    </a></li>
+                                <li class="nav-item active"> <a href="descuento.html" class="nav-link">
+                                        <p>Descuento</p>
+                                    </a></li>
+                                <li class="nav-item active"> <a href="contacto.html" class="nav-link">
+                                        <p>Contacto</p>
+                                    </a></li>
+                                <li class="nav-item active"> <a href="nosotros.html" class="nav-link">
+                                        <p>Nosotros</p>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div>
-                    <nav class="navigation">
-                        <ul>
-                            <li><a href="ofertas.html"><p>Ofertas</p> </a></li>
-                            <li><a href="descuento.html"><p> Descuento</p></a></li>
-                            <li><a href="nosotros.html"><p>Nosotros</p> </a></li>
-                            <li><a href="contacto.html"><p>Contacto</p> </a></li>
-                        </ul>
-                    </nav>  
-                </div>  
             </div>
+            <div class="separacion"></div>
         </header>
 
         <section id="titulo">
             <div class="bordeRojo"></div>
-            <div class="titulo_div">
-                <p> CONTACTO</p>
-            </div>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="titulo_div">
+                                <p> CONTACTO</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section id="formulario">
             <article>
-                <div class="contacto_textoIntro">
-                    <div>
-                     <p>
-                    En COTO estamos dedicados a la atención de nuestros clientes y consideramos
-                    sus opiniones como un elemento fundamental para mejorar nuestro servicio.   
-                    </p>
-                    <p>
-                        Por favor, envianos tus comentarios.
-                    </p>      
-                    </div>
-                    
-                </div>
-                <div class="contacto_formulario">
-
-                <div class="formulario_palabra"><P>Escribinos</P></div>
-                <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="get" >
-                    <fieldset>
-                    
-                    
-                    
-                    <div class="contacto_formulario-caja" >
-
-                            <div class="contacto_formulario-caja--1">
-                                <div class="contacto_formulario-label">
-                                    <div><p><label for="nombre">Nombre</label> </p></div>
-                                    <div><p><label for="apellido">Apellido</label></p></div>
-                                    <div> <p><label for="DNI">DNI</label></p> </div>
-                                    <div><p><label for="Telefono">Telefono</label></p></div>
-                                    <div><p><label for="Correo electronico">eMail </label></p></div>
-                                    <div><p><label for="Localidad">Localidad</label></p></div>
-                                </div>
-                                <div class="contacto_formulario-input">
-                                    <div><input type="text" name="nombre"  id="Nombre" placeholder="Ingresa tu nombre"></div>
-                                    <div><input type="text" name="apellido" id="Apellido" placeholder="Ingresa tu apellido"></div>
-                                    <div><input type="text" name="dni" id="DNI" placeholder="DNI"></div>
-                                    <div><input type="text" name="telefono" id="celular" placeholder="Telefono"></div>
-                                    <div><input type="text" name="mail" id="email" placeholder="Ingrese su mail"></div>
-                                    <div><input type="text" name="localidad" id="Localidad" placeholder="Ingrese su localidad"></div>
-                                </div>  
+                <div class="container-fluid">
+                    <div class="row w-100 m-0" >
+                        <div class="col-12 w-100 p-3 d-flex flex-column">
+                            <div class="contacto_textoIntro container flex-column align-items-center b" >
+                                    <p class="text-center mt-1">
+                                        En COTO estamos dedicados a la atención de nuestros clientes y consideramos
+                                        sus opiniones como un elemento fundamental para mejorar nuestro servicio.
+                                    </p>
+                                    <p class="text-center mt-1">
+                                        Por favor, envianos tus comentarios.
+                                    </p>
                             </div>
-             
-                            <div class="contacto_formulario-caja--2">
-                                <div class="contacto_motivo">
-                                    <div>
-                                     <P>Motivo de Contacto</P>    
-                                    </div>
-                                    <div>
-                                      <select name="Motivo">
-                                        <option value="Reclamo en mi compra">Reclamo en mi compra</option>
-                                        <option value="No me llego mi tarjeta Comunidad">No me llego mi tarjeta Comunidad</option>
-                                        <option value="Producto en mal estado">Producto en mal estado</option>
-                                        <option value="No me llego el resumen de mi tarjeta">No me llego el resumen de mi tarjeta</option>
-                                        <option value="Consulta">Consulta</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>  
-                                    </div>
-                                </div>
-                                <div> 
-                                    <textarea name="mensaje" id="message" cols="100" rows="10" placeholder="Deje su reclamo/mensaje aqui con informacion adicional acerca de su situacion"></textarea> 
-                                </div>
-                
-
+                            <div class="contacto_formulario col-12 ">
             
-                            </div> 
+                                <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="get">
+                                    <fieldset>
+            
+            
+            
+                                        <div class="contacto_formulario-caja d-flex flex-column flex-md-row">
+            
+                                            <div class="contacto_formulario-caja--1 col-md-4">
+                                                <div class="contacto_formulario-label col-12 col-md-12 d-flex flex-column align-items-center">
+                                                    <div class="d-flex ">
+                                                    <div class="col-4">
+                                                        <p><label for="nombre">Nombre</label> </p>
+                                                    </div>
+                                                    <div><input type="text" name="nombre" id="Nombre"
+                                                        placeholder="Ingresa tu nombre">
+                                                    </div> 
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4">
+                                                            <p><label for="apellido">Apellido</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="apellido" id="Apellido"
+                                                            placeholder="Ingresa tu apellido">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1"> 
+                                                            <p><label for="DNI">DNI</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="dni" id="DNI" placeholder="DNI">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1">
+                                                            <p><label for="Telefono">Telefono</label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="telefono" id="celular" placeholder="Telefono">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4 mr-1">
+                                                            <p><label for="Correo electronico">eMail </label></p>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" name="mail" id="email" placeholder="Ingrese su mail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <div class="col-4">
+                                                            <p><label for="Localidad">Localidad</label></p>
+                                                        </div>
+                                                        <div class="col-8"> 
+                                                            <input type="text" name="localidad" id="Localidad"
+                                                            placeholder="Ingrese su localidad">
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+    
+                                            </div>
+
+
+                                                </div>
+
+                                            <div class="contacto_formulario-caja--2 d-flex flex-column align-items-center">
+                                                <div class="contacto_motivo d-flex flex-column align-items-center">
+                                                    <div>
+                                                        <P>Motivo de Contacto</P>
+                                                    </div>
+                                                    <div>
+                                                        <select name="Motivo">
+                                                            <option value="Reclamo en mi compra">Reclamo en mi compra</option>
+                                                            <option value="No me llego mi tarjeta Comunidad">No me llego mi tarjeta
+                                                                Comunidad</option>
+                                                            <option value="Producto en mal estado">Producto en mal estado</option>
+                                                            <option value="No me llego el resumen de mi tarjeta">No me llego el
+                                                                resumen de mi tarjeta</option>
+                                                            <option value="Consulta">Consulta</option>
+                                                            <option value="Otro">Otro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <textarea class="w-75" name="mensaje" id="message" cols="100" rows="10"
+                                                        placeholder="Deje su reclamo/mensaje aqui con informacion adicional acerca de su situacion"></textarea>
+                                                </div>
+            
+                                                <div class="contacto__botonesFormulario">
+                                                    <input class="boton-form" type="submit" value="Enviar la informacion">
+                                                </div>
+            
+                                            </div>
+                                        </div>
+            
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="contacto__botonesFormulario">
-                        <input class="boton-form" type="submit" value="Enviar la informacion">
-                    </div>
-                    </fieldset>
-                </form>
                 </div>
+               
 
             </article>
-        </section>  
+        </section>
 
 
         <section id="redes_contacto" class="redes">
             <div class="bordeRojo"></div>
         </section>
-        
-        <section id="infoAdicional_contacto" class="infoAdicional">
-                <div>
-                    <div>
-                        <ul>
-                            <li class="infoAdicional_titulo"><p>LA EMPRESA</p></li>
-                            <li class="infoAdicional_opciones"><p>Tarjeta Comunidad</p></li>
-                            <li class="infoAdicional_opciones"><p>Tarjeta TCI</p> </li>
-                            <li class="infoAdicional_opciones"><P>Nuestras Marcas</P> </li>
-                            <li class="infoAdicional_opciones"><p>Coto Exporta</p> </li>
-                            <li class="infoAdicional_opciones"><p>Trabaja con Nosotros</p> </li>
-                            <li class="infoAdicional_opciones"><p>Sucursales</p> </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <UL>
-                            <li class="infoAdicional_titulo"> <p>AYUDA</p></li>
-                            <li class="infoAdicional_opciones"><P>Preguntas Frecuentes</P></li>
-                            <li class="infoAdicional_opciones"><p>Como comprar online</p></li>
-                            <li class="infoAdicional_opciones"><p>Atencion al cliente</p></li>
-                            <li class="infoAdicional_opciones"><p>Retiros</p></li>
-                            <li class="infoAdicional_opciones"><p>Envios</p></li>
-                        </UL>
-                    </div>    
-                </div>
-        </section>   
 
-            <footer>
-                <article>
-                    <div class ="footer_copyright" ><p>© 2021 | Derechos reservados - COTO C.I.C.S.A </p></div>
-                    <div class="footer_dir"><p>COTO C.I.C.S.A. CUIT: 30-54808315-6 - Nombre comercial: COTO - WWW.COTO.COM.AR. - Paysandú 1842 de la Ciudad Autónoma de Buenos Aires.</p></div> 
-                    <div><p style="text-align: center;">Defensa de las y los Consumidores. Para reclamos: Ingrese <span><a href="./assets/pages/contacto.html" style="text-decoration: none ;"><U>aqui</U> </a> </span> </p> </div>    
-                </article> 
-            </footer>
-    </div>  
+
+        <footer>
+            <div class="footer-dark">
+                <div class="container">
+                    <div class="row col-lg-12 m-1">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>LA EMPRESA</h3>
+                            <ul>
+                                <li><a href="#">Tarjeta Comunidad</a></li>
+                                <li><a href="#">Tarjeta TCI</a></li>
+                                <li><a href="#">Nuestras Marcas</a></li>
+                                <li><a href="#">Trabaja con Nosotros</a></li>
+                                <li><a href="#">Sucursales</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>AYUDA</h3>
+                            <ul>
+                                <li><a href="#">Preguntas frecuentes</a></li>
+                                <li><a href="#">Como comprar online</a></li>
+                                <li><a href="#">Atencion al cliente</a></li>
+                                <li><a href="#">Retiros</a></li>
+                                <li><a href="#">Envios</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>COTO C.I.C.S.A</h3>
+                            <p>CUIT: 30-54808315-6 - Nombre comercial: COTO - WWW.COTO.COM.AR. - Paysandú
+                                1842 de la Ciudad Autónoma de Buenos Aires.</p>
+                        </div>
+                        <div class="col item social col-12 col-lg-12"><a href="#"><i
+                                    class="icon ion-social-facebook"></i></a><a href="#"><i
+                                    class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright" style="text-align: center;">© 2021 | Copyright - COTO C.I.C.S.A </p>
+
+                </div>
+        </footer>
+    </div>
 </body>
+
 </html>
