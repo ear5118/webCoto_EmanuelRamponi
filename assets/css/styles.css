@@ -243,7 +243,7 @@ ul {
   text-align: center;
   font-size: 27px;
   align-items: center;
-  transition: all 0.5s;
+  transition: ease 0.5s;
 }
 
 
@@ -257,7 +257,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition: ease 0.3s;
+  transition: ease 0.2s;
 }
 
 .promosDestacadas_titulos p {
@@ -349,7 +349,7 @@ h3 {
   font-weight: bold;
   color: #000000;
   letter-spacing: 1px;
-  transition: ease 0.3s;
+  transition: ease 0.4s;
 }
 
 .numeros {
@@ -602,7 +602,7 @@ header li:hover .nav-item {
 
 .botonComprar:hover {
   background-color: #afafafc7;
-  width: 101%;
+  width: 60%;
   text-align: center;
   padding-left: 2px;
   font-size: 22px;
