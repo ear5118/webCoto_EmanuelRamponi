@@ -1,24 +1,13 @@
 {
-  "name": "proyecto_dw",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "Nombre e Email",
+  "description": "Descripcion de mi Package",
+  "license": "MIT",
+  "name": "nombre-de-mi-package",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:sass": "node-sass --include-path scss assets/scss/styles.scss assets/css/styles2.css",     
-    "watch:sass": "nodemon -e scss -x \"npm run build:sass\""
+    "watch:sass": "nodemon -e scss -x \"npm run build:sass\"",
+    "build:sass": "node-sass --output-style compressed assets/scss/main.scss assets/css/main.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ear5118/coder_dw.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ear5118/coder_dw/issues"
-  },
-  "homepage": "https://github.com/ear5118/coder_dw#readme",
+  "version": "1.0.0",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
