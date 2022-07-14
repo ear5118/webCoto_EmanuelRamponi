@@ -1,82 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-.borde {
-  border: 1px solid red;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100vh;
-  ;
-}
-
-body {
-  font-family: sans-serif;
-  background: #5faad542;
-}
-
-p {
-  margin: 0;
-}
-
-
-#wrapper {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "banner"
-    "submenu"
-    "promosDestacadas"
-    "bannerElectro"
-    "promosElectro"
-    "serviciosCoto"
-    "redes"
-    "footer"
-  ;
-  grid-template-rows: repeat(3, 0fr) 1fr 0fr 0.95fr 0fr 75px auto;
-  width: 100%;
-}
-
-#wrapper_infoAdicional {
-  grid-area: infoAdicional;
-}
-
-#bannerPromosDestacadas {
-  grid-area: banner;
-  background: #181818e0;
-}
-
-#wrapper_promocionesDestacadas {
-  grid-area: promosDestacadas;
-
-}
-
-#wrapper_bannerElectro {
-  grid-area: bannerElectro;
-  background: #181818e0;
-}
-
-#wrapper_promosElectro {
-  grid-area: promosElectro;
-}
-
-#wrapper_redes {
-  grid-area: redes;
-  background: #2e8afd;
-}
-
-#wrapper_serviciosCoto {
-  background: #181818e0;
-}
-
-.separacion {
-  border: 2px solid #df1c1c;
-}
 
 /*HEADER*/
 header {
@@ -161,9 +83,7 @@ ul {
 }
 
 /*SUBMENU*/
-#submenu {
-  background: #ffffff78;
-}
+
 
 .submenu__ul {
   display: flex;
