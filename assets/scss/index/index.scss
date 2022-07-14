@@ -1,8 +1,11 @@
-@import 'header';
+@import '../common/header.scss';
 @import 'submenu';
 @import 'bannerPromos';
 @import 'promosdestacadas';
-@import 'footer';
+@import '../common/footer.scss';
+@import '../misc/variables';
+@import '../misc/mixins';
+
 #wrapper {
     display: grid;
     grid-template-areas:
@@ -16,7 +19,7 @@
       "redes"
       "footer"
     ;
-    grid-template-rows: repeat(3, 0fr) 1fr 0fr 0.95fr 0fr 75px auto;
+    grid-template-rows: repeat(3, 0fr) 1fr 0.2fr 0.95fr 0.3fr 75px auto;
     width: 100%;
   }
   
