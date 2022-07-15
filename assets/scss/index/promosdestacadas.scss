@@ -47,13 +47,13 @@
 	
 }
 .promos_seccion1 {
-	@include flex(column,normal,center);
+	@include flex(column,none,center);
 }
 .container--promos_div {
-	@include flex (column,normal,normal);
+	@include flex (column,none,none);
 }
 .promos_posts {
-	@include flex (column,normal,normal);
+	@include flex (column,none,none);
 }
 .div_flex--1eraParte_oferta {
 	background-color: #e50000b5;
@@ -92,22 +92,20 @@
 	text-decoration: line-through;
 }
 .div_flex--2daParte-B {
-	display: flex;
-	justify-content: space-evenly;
+	@include flex (none,space-evenly,none);
 }
+
 h3 {
 	font-size: 25px;
 }
 .botonComprar {
-	margin-bottom: 20px;
-	background: #e7e6e6;
-	padding: 20px;
+	@include button(#000000,#e7e6e6,1em);
+	margin-bottom: $medium;
+	padding: $small;
 	border-radius: 14px;
-	margin-top: 10px;
+	margin-top: $xsmall;
 	border: none;
-	font-size: 16px;
 	font-weight: bold;
-	color: #000000;
 	letter-spacing: 1px;
 	transition: ease 0.4s;
 	&:hover {

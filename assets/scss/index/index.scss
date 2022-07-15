@@ -1,10 +1,12 @@
+@import '../misc/variables';
+@import '../misc/mixins';
+
+
 @import '../common/header.scss';
 @import 'submenu';
 @import 'bannerPromos';
 @import 'promosdestacadas';
 @import '../common/footer.scss';
-@import '../misc/variables';
-@import '../misc/mixins';
 
 #wrapper {
     display: grid;

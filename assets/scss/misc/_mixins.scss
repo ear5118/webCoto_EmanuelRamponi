@@ -4,3 +4,9 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin button ($color, $fondo,$size) {
+    color: $color;
+    background-color: $fondo;
+    font-size: $size;
+}
