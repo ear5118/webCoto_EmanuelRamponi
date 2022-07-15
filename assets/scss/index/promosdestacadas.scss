@@ -1,3 +1,6 @@
+@import '../misc/mixins';
+@import '../misc/variables';
+
 .descripcion_producto {
 	margin-bottom: 30px;
 }
@@ -16,8 +19,7 @@
 	list-style: none;
 }
 .container--promos {
-	display: flex;
-	flex-direction: column;
+	@include flex(column,normal,normal);
 }
 .card {
 	margin: 1rem;
@@ -27,20 +29,15 @@
 	transition: ease 0.2s;
 	&:hover {
 		margin: 0.2rem;
-		
 	}
 }
-
-
 .promosDestacadas_titulos {
 	border-radius: 10px;
 	border: 3px ridge red;
 	background-color: #d8d8d85b;
 	width: 90%;
 	height: 60PX;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	@include flex(row,space-around,center);
 	transition: ease 0.2s;
 	p {
 		font-size: 23px;
@@ -50,17 +47,13 @@
 	
 }
 .promos_seccion1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column,normal,center);
 }
 .container--promos_div {
-	display: flex;
-	flex-direction: column;
+	@include flex (column,normal,normal);
 }
 .promos_posts {
-	display: flex;
-	flex-direction: column;
+	@include flex (column,normal,normal);
 }
 .div_flex--1eraParte_oferta {
 	background-color: #e50000b5;
@@ -83,11 +76,9 @@
 	width: 50%;
 }
 .div_flex--1eraParte {
-	display: flex;
-	justify-content: space-around;
+	@include flex(row,space-around,center);
 	padding: 0.5rem;
 	margin-bottom: 30px;
-	align-items: center;
 }
 .div_flex--2daParte {
 	display: flex;

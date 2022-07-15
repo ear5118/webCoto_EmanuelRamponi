@@ -1,7 +1,6 @@
+@import '../misc/mixins';
+@import '../misc/variables';
 
-#submenu {
-    background: #ffffff78;
-  }
 .submenu__ul {
     display: flex;
     justify-content: space-evenly;
