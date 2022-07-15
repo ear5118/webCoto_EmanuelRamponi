@@ -2,24 +2,21 @@
 @import '../misc/variables';
 
 .submenu__ul {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(none,space-evenly,center);
     list-style: none;
     margin: 5px 0;
     font-size: 13px;
     text-transform: uppercase;
-    align-items: center;
 }
 
 .submenu {
     ul {
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(none,space-evenly,center);
         list-style: none;
         margin: 5px 0;
-        font-size: 13px;
+        font-size: $font-base - 1em;
         text-transform: uppercase;
-        align-items: center;
+
 
         li {
             width: 50%;
@@ -29,17 +26,14 @@
                 border-radius: 10px;
                 border: 1px ridge #ffffff;
                 margin: 4px;
-                padding: 10px;
-                background: #d63232;
-                color: #ffff;
+                padding: $xsmall - 2rem;
+                @include button (#ffff,#d63232, $font-base);
                 font-weight: bold;
                 width: 70%;
                 display: inline-flex;
                 justify-content: space-around;
-
                 p {
                     margin-bottom: 0;
-                    font-size: 15px;
                 }
             }
         }
