@@ -1,10 +1,12 @@
+@import '../misc/variables';
+@import '../misc/mixins';
+
+
 @import '../common/header.scss';
 @import 'submenu';
 @import 'bannerPromos';
 @import 'promosdestacadas';
 @import '../common/footer.scss';
-@import '../misc/variables';
-@import '../misc/mixins';
 
 #wrapper {
     display: grid;
@@ -23,34 +25,41 @@
     width: 100%;
   }
   
-  #wrapper_infoAdicional {
-    grid-area: infoAdicional;
+
+  #submenu {
+    background: #ffffff78;
   }
   
   #bannerPromosDestacadas {
     grid-area: banner;
-    background: #181818e0;
+    background: $color-secundario;
   }
   
   #wrapper_promocionesDestacadas {
     grid-area: promosDestacadas;
-  
+    background: $color-terciario;
   }
   
   #wrapper_bannerElectro {
     grid-area: bannerElectro;
-    background: #181818e0;
+    background: $color-secundario;
   }
   
   #wrapper_promosElectro {
     grid-area: promosElectro;
+    background: $color-terciario;
   }
   
   #wrapper_redes {
     grid-area: redes;
-    background: #2e8afd;
+    background: $color-principal;
   }
   
   #wrapper_serviciosCoto {
-    background: #181818e0;
+    background: $color-secundario;
+  }
+
+  footer {
+    background-color: $color-principal;
+    grid-area: footer;
   }

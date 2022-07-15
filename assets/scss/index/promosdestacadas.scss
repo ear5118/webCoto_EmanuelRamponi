@@ -1,3 +1,6 @@
+@import '../misc/mixins';
+@import '../misc/variables';
+
 .descripcion_producto {
 	margin-bottom: 30px;
 }
@@ -16,8 +19,7 @@
 	list-style: none;
 }
 .container--promos {
-	display: flex;
-	flex-direction: column;
+	@include flex(column,normal,normal);
 }
 .card {
 	margin: 1rem;
@@ -27,20 +29,15 @@
 	transition: ease 0.2s;
 	&:hover {
 		margin: 0.2rem;
-		
 	}
 }
-
-
 .promosDestacadas_titulos {
 	border-radius: 10px;
 	border: 3px ridge red;
 	background-color: #d8d8d85b;
 	width: 90%;
 	height: 60PX;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	@include flex(row,space-around,center);
 	transition: ease 0.2s;
 	p {
 		font-size: 23px;
@@ -50,17 +47,13 @@
 	
 }
 .promos_seccion1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column,none,center);
 }
 .container--promos_div {
-	display: flex;
-	flex-direction: column;
+	@include flex (column,none,none);
 }
 .promos_posts {
-	display: flex;
-	flex-direction: column;
+	@include flex (column,none,none);
 }
 .div_flex--1eraParte_oferta {
 	background-color: #e50000b5;
@@ -83,11 +76,9 @@
 	width: 50%;
 }
 .div_flex--1eraParte {
-	display: flex;
-	justify-content: space-around;
+	@include flex(row,space-around,center);
 	padding: 0.5rem;
 	margin-bottom: 30px;
-	align-items: center;
 }
 .div_flex--2daParte {
 	display: flex;
@@ -101,22 +92,20 @@
 	text-decoration: line-through;
 }
 .div_flex--2daParte-B {
-	display: flex;
-	justify-content: space-evenly;
+	@include flex (none,space-evenly,none);
 }
+
 h3 {
 	font-size: 25px;
 }
 .botonComprar {
-	margin-bottom: 20px;
-	background: #e7e6e6;
-	padding: 20px;
+	@include button(#000000,#e7e6e6,1em);
+	margin-bottom: $medium;
+	padding: $small;
 	border-radius: 14px;
-	margin-top: 10px;
+	margin-top: $xsmall;
 	border: none;
-	font-size: 16px;
 	font-weight: bold;
-	color: #000000;
 	letter-spacing: 1px;
 	transition: ease 0.4s;
 	&:hover {
