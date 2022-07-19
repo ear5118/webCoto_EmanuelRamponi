@@ -1,8 +1,8 @@
 {
-  "author": "Nombre e Email",
-  "description": "Descripcion de mi Package",
+  "author": "Emanuel Ramponi",
+  "description": "Todas las noticias y novedades sobre el MCU",
   "license": "MIT",
-  "name": "nombre-de-mi-package",
+  "name": "fandom-mcu",
   "scripts": {
     "watch:sass": "nodemon -e scss -x \"npm run build:sass\"",
     "build:sass": "node-sass --output-style compressed assets/scss/main.scss assets/css/main.css"
