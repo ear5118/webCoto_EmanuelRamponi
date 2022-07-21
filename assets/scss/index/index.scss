@@ -27,39 +27,39 @@
   
 
   #submenu {
-    background: #ffffff78;
+    background-color: map-get($color, submenu );
   }
   
   #bannerPromosDestacadas {
     grid-area: banner;
-    background: $color-secundario;
+    background: map-get($color, secundario );
   }
   
   #wrapper_promocionesDestacadas {
     grid-area: promosDestacadas;
-    background: $color-terciario;
+    background: map-get($color, terciario );
   }
   
   #wrapper_bannerElectro {
     grid-area: bannerElectro;
-    background: $color-secundario;
+    background: map-get($color, secundario );
   }
   
   #wrapper_promosElectro {
     grid-area: promosElectro;
-    background: $color-terciario;
+    background: map-get($color, terciario );
   }
   
   #wrapper_redes {
     grid-area: redes;
-    background: $color-principal;
+    background: map-get($color, principal );
   }
   
   #wrapper_serviciosCoto {
-    background: $color-secundario;
+    background: map-get($color, secundario );
   }
 
   footer {
-    background-color: $color-principal;
+    background: map-get($color, principal );
     grid-area: footer;
   }

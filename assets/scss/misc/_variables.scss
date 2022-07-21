@@ -1,8 +1,13 @@
 /*COLORES*/
-$color-principal: #2976d7;
-$color-secundario: #222729;
-$color-terciario: #ececec;
-$text-color: #111213;
+$color: (
+principal: #2976d7,
+secundario: #222729,
+terciario: #ececec,
+text-color: #111213,
+submenu: #ffffff78
+);
+
+
 
 /*ESPACIADOS*/
 $large: 6rem;
