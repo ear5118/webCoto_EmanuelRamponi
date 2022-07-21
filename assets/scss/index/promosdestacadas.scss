@@ -32,12 +32,11 @@
 	}
 }
 .promosDestacadas_titulos {
-	border-radius: 10px;
+	@extend .boton;
 	border: 3px ridge red;
 	background-color: #d8d8d85b;
 	width: 90%;
 	height: 60PX;
-	@include flex(row,space-around,center);
 	transition: ease 0.2s;
 	p {
 		font-size: 23px;
@@ -99,7 +98,9 @@ h3 {
 	font-size: 25px;
 }
 .botonComprar {
-	@include button(#000000,#e7e6e6,1em);
+	
+	@extend .boton;
+	background:  #e7e6e6;
 	margin-bottom: $medium;
 	padding: $small;
 	border-radius: 14px;
